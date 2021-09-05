@@ -6,15 +6,18 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "format:test": "prettier \"projects/my-epic-app/**/*.{ts,html,md,scss,json}\" --list-different"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~12.0.5",
+    "@angular/cdk": "^12.2.4",
     "@angular/common": "~12.0.5",
     "@angular/compiler": "~12.0.5",
     "@angular/core": "~12.0.5",
     "@angular/forms": "~12.0.5",
+    "@angular/material": "^12.2.4",
     "@angular/platform-browser": "~12.0.5",
     "@angular/platform-browser-dynamic": "~12.0.5",
     "@angular/router": "~12.0.5",
@@ -23,6 +26,7 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "~12.0.5",
     "@angular/cli": "~12.0.5",
     "@angular/compiler-cli": "~12.0.5",
     "@types/jasmine": "~3.6.0",
@@ -33,6 +37,8 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "prettier": "^2.3.2",
+    "tslint-config-prettier": "^1.18.0",
     "typescript": "~4.2.3"
   }
 }
